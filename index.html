@@ -1,0 +1,624 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glo Beauty | Luxe Éclat</title>
+    <meta
+      name="description"
+      content="Boutique de mode luxe avec élégance, beauté et pièces dorées."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand-wrap">
+        <img src="logo.jpg.png" alt="Glo Beauty Logo" class="brand-logo" />
+        <div>
+          <p class="brand-name">Glo Beauty</p>
+          <small>Luxury Atelier</small>
+        </div>
+      </div>
+
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="#" class="active">Accueil</a>
+        <a href="#collection" class="active">Collection</a>
+        <a href="#about" class="active">À propos</a>
+        <a href="#journal" class="active">Journal</a>
+        <a href="#contact" class="active">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn search-toggle" aria-label="Recherche">⌕</button>
+        <button class="icon-btn wishlist-toggle" aria-label="Favoris">
+          ♡
+          <span class="cart-badge" id="favoriteCount">0</span>
+        </button>
+        <button class="icon-btn account-toggle" aria-label="Compte">👤</button>
+        <button class="icon-btn cart-toggle" aria-label="Panier">
+          🛍️
+          <span class="cart-badge" id="cartBadge">0</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <p class="eyebrow">Luxe discret • Éclat permanent</p>
+          <h1>La beauté qui parle en élégance.</h1>
+          <p class="hero-text">
+            Des silhouettes raffinées, des matières nobles et un style made for
+            unforgettable moments.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#collection" class="btn btn-primary">Découvrir la collection</a>
+            <a href="#about" class="btn btn-secondary">Notre histoire</a>
+          </div>
+
+          <ul class="hero-stats">
+            <li><strong>12k+</strong><span>Clients satisfaits</span></li>
+            <li><strong>4.9/5</strong><span>Note moyenne</span></li>
+            <li><strong>48h</strong><span>Livraison express</span></li>
+          </ul>
+        </div>
+
+        <div class="hero-visual" aria-label="Présentation de la collection luxe">
+          <div class="image-card large-card">
+            <img
+              src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=80"
+              alt="Modèle élégante en robe dorée"
+            />
+          </div>
+          <div class="floating-badge badge-top">Edition limitée</div>
+          <div class="floating-badge badge-bottom">Nouveau</div>
+        </div>
+      </section>
+
+      <section class="feature-strip">
+        <div class="feature-item">
+          <span>✦</span>
+          <p>Fabrication premium</p>
+        </div>
+        <div class="feature-item">
+          <span>✦</span>
+          <p>Couleurs prestige</p>
+        </div>
+        <div class="feature-item">
+          <span>✦</span>
+          <p>Service VIP</p>
+        </div>
+      </section>
+
+      <section class="categories">
+        <div class="section-heading">
+          <p class="eyebrow">Curations</p>
+          <h2>Tout l’éclat de la maison</h2>
+        </div>
+
+        <div class="category-grid">
+          <article class="category-card card-dark">
+            <div class="card-image">
+              <img
+                src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=700&q=80"
+                alt="Robe chic"
+              />
+            </div>
+            <div class="card-info">
+              <h3>Robe soirée</h3>
+              <p>Silhouettes sculptées et finitions raffinées.</p>
+            </div>
+          </article>
+
+          <article class="category-card card-gold">
+            <div class="card-image">
+              <img
+                src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=700&q=80"
+                alt="Ensemble luxe"
+              />
+            </div>
+            <div class="card-info">
+              <h3>Ensemble luxe</h3>
+              <p>Élégance contemporaine, impact immédiat.</p>
+            </div>
+          </article>
+
+          <article class="category-card card-dark">
+            <div class="card-image">
+              <img
+                src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=700&q=80"
+                alt="Accessoires dorés"
+              />
+            </div>
+            <div class="card-info">
+              <h3>Accessoires</h3>
+              <p>Le détail qui transforme chaque look.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="collection" class="collection">
+        <div class="section-heading row">
+          <div>
+            <p class="eyebrow">Collection signature</p>
+            <h2>Pieces qui racontent votre aura</h2>
+          </div>
+          <a href="#" class="link-gold">Voir tout</a>
+        </div>
+
+        <div class="shop-toolbar">
+          <div class="filter-chips" aria-label="Filtres de boutique">
+            <button class="filter-btn active" data-filter="all" type="button">Tout</button>
+            <button class="filter-btn" data-filter="robes" type="button">Robes</button>
+            <button class="filter-btn" data-filter="ensembles" type="button">Ensembles</button>
+            <button class="filter-btn" data-filter="accessoires" type="button">Accessoires</button>
+          </div>
+          <div class="shop-tools">
+            <input id="productSearch" type="search" placeholder="Rechercher un produit" aria-label="Recherche produit" />
+            <button class="secondary-action" type="button">Favoris</button>
+          </div>
+        </div>
+
+        <div class="product-grid">
+          <article class="product-card" data-category="robes" data-name="Robe Ébène Élégante" data-price="75" data-image="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80" data-description="Robe élégante en satin léger avec coupe fluide, pensée pour les soirées haut de gamme." data-material="Satin premium" data-color="Ébène / Noir profond">
+            <span class="tag">Best seller</span>
+            <img
+              src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80"
+              alt="Robe Ébène Élégante"
+            />
+            <div class="product-body">
+              <h3>Robe Ébène Élégante</h3>
+              <div class="product-meta">
+                <p>75,00 $</p>
+                <div class="product-actions">
+                  <button class="favorite-toggle" type="button" aria-label="Ajouter aux favoris">♡</button>
+                  <button class="view-detail" type="button">Détail</button>
+                  <button class="add-to-cart" type="button">Ajouter</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="robes" data-name="Robe Royale Dorée" data-price="89" data-image="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=800&q=80" data-description="Tenue dorée à l’éclat discret, idéale pour les rendez-vous glamour et les événements spéciaux." data-material="Velours lustré" data-color="Or champagne">
+            <span class="tag">Nouveau</span>
+            <img
+              src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=800&q=80"
+              alt="Robe Royale Dorée"
+            />
+            <div class="product-body">
+              <h3>Robe Royale Dorée</h3>
+              <div class="product-meta">
+                <p>89,00 $</p>
+                <div class="product-actions">
+                  <button class="favorite-toggle" type="button" aria-label="Ajouter aux favoris">♡</button>
+                  <button class="view-detail" type="button">Détail</button>
+                  <button class="add-to-cart" type="button">Ajouter</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="ensembles" data-name="Ensemble Ankara Chic" data-price="115" data-image="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80" data-description="Ensemble chic revisitée dans un motif africain sophistiqué aux lignes modernes et premium." data-material="Ankara luxe" data-color="Mélange terre / noir">
+            <span class="tag">Signature</span>
+            <img
+              src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80"
+              alt="Ensemble Ankara Chic"
+            />
+            <div class="product-body">
+              <h3>Ensemble Ankara Chic</h3>
+              <div class="product-meta">
+                <p>115,00 $</p>
+                <div class="product-actions">
+                  <button class="favorite-toggle" type="button" aria-label="Ajouter aux favoris">♡</button>
+                  <button class="view-detail" type="button">Détail</button>
+                  <button class="add-to-cart" type="button">Ajouter</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="robes" data-name="Robe Blanche Glamour" data-price="95" data-image="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=800&q=80" data-description="Robe blanche éclatante avec finesse, parfaite pour des soirées élégantes ou des mariages." data-material="Coton satin" data-color="Blanc pur / ivoire">
+            <span class="tag">Élite</span>
+            <img
+              src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=800&q=80"
+              alt="Robe Blanche Glamour"
+            />
+            <div class="product-body">
+              <h3>Robe Blanche Glamour</h3>
+              <div class="product-meta">
+                <p>95,00 $</p>
+                <div class="product-actions">
+                  <button class="favorite-toggle" type="button" aria-label="Ajouter aux favoris">♡</button>
+                  <button class="view-detail" type="button">Détail</button>
+                  <button class="add-to-cart" type="button">Ajouter</button>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" class="story">
+        <div class="story-image">
+          <img
+            src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80"
+            alt="Atelier de mode luxe"
+          />
+        </div>
+
+        <div class="story-content">
+          <p class="eyebrow">La maison Glo Beauty</p>
+          <h2>Un style qui s’inspire de l’élégance intemporelle.</h2>
+          <p>
+            Nous créons des pièces pour celles qui aiment l’attention, la finesse et
+            la présence. Chaque collection allie modernité, luxe discret et la joie
+            de se sentir exceptionnelle.
+          </p>
+
+          <div class="story-points">
+            <div>
+              <strong>100%</strong>
+              <span>Textiles choisis</span>
+            </div>
+            <div>
+              <strong>Prix</strong>
+              <span>Premium</span>
+            </div>
+            <div>
+              <strong>Style</strong>
+              <span>Signature</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="luxury-banner">
+        <div class="luxury-banner__content">
+          <p class="eyebrow">Expérience VIP</p>
+          <h2>Un service qui ressemble à une maison de couture.</h2>
+        </div>
+        <div class="luxury-banner__stats">
+          <div>
+            <strong>24/7</strong>
+            <span>Conseil styliste</span>
+          </div>
+          <div>
+            <strong>48h</strong>
+            <span>Livraison express</span>
+          </div>
+          <div>
+            <strong>4.9/5</strong>
+            <span>Clients premium</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonials">
+        <div class="section-heading">
+          <p class="eyebrow">Avis clients</p>
+          <h2>Le luxe raconté par celles qui l’ont choisi.</h2>
+        </div>
+
+        <div class="testimonial-grid">
+          <article class="testimonial-card">
+            <p>“La coupe est exceptionnelle, la matière est premium et la livraison est au top. J’ai eu l’impression de recevoir un colis de maison de couture.”</p>
+            <div class="testimonial-author">
+              <strong>Princilia L.</strong>
+              <span>Client VIP</span>
+            </div>
+          </article>
+          <article class="testimonial-card">
+            <p>“Je cherchais un look chic et puissant. La robe dorée m’a immédiatement séduite, et le service a été irréprochable.”</p>
+            <div class="testimonial-author">
+              <strong>Maria L.</strong>
+              <span>Event stylist</span>
+            </div>
+          </article>
+          <article class="testimonial-card">
+            <p>“L’ambiance du site reflète exactement le type de luxe que je recherche. Très belle expérience, très premium.”</p>
+            <div class="testimonial-author">
+              <strong>Julia L.</strong>
+              <span>Client régulière</span>
+            </div>
+          </article>
+          <article class="testimonial-card">
+            <p>“Une ambiance trés pro un mélange entre lux et chic”</p>
+            <div class="testimonial-author">
+              <strong>Merdi L.</strong>
+              <span>Client régulière</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="journal" class="journal">
+        <div class="section-heading">
+          <p class="eyebrow">Actualités</p>
+          <h2>Publiez vos articles et inspirez votre clientèle</h2>
+        </div>
+
+        <div class="journal-layout">
+          <form id="articleForm" class="article-form">
+            <div class="field-group">
+              <label for="articleTitle">Titre de l’article</label>
+              <input id="articleTitle" name="articleTitle" type="text" placeholder="Ex. La beauté de la robe dorée" required />
+            </div>
+            <div class="field-group">
+              <label for="articleCategory">Catégorie</label>
+              <select id="articleCategory" name="articleCategory">
+                <option value="Beauty notes">Beauty notes</option>
+                <option value="Style guide">Style guide</option>
+                <option value="Maison">Maison</option>
+                <option value="Conseils">Conseils</option>
+              </select>
+            </div>
+            <div class="field-group">
+              <label for="articleExcerpt">Résumé</label>
+              <textarea id="articleExcerpt" name="articleExcerpt" rows="4" placeholder="Partagez une idée inspirante pour votre audience..." required></textarea>
+            </div>
+            <div class="field-group">
+              <label for="articleImage">Photo depuis mon appareil</label>
+              <input id="articleImage" name="articleImage" type="file" accept="image/*" />
+            </div>
+            <div class="field-group">
+              <label for="articleVideo">Vidéo depuis mon appareil</label>
+              <input id="articleVideo" name="articleVideo" type="file" accept="video/*" />
+            </div>
+            <button type="submit" class="btn btn-primary">Publier l’article</button>
+          </form>
+
+          <div class="journal-grid" id="journalGrid"></div>
+        </div>
+      </section>
+    </main>
+
+    <aside class="cart-panel" id="cartPanel" aria-label="Panier">
+      <div class="cart-header">
+        <div>
+          <p class="eyebrow small">Panier</p>
+          <h3>Votre sélection</h3>
+        </div>
+        <button class="close-cart" aria-label="Fermer le panier">✕</button>
+      </div>
+
+      <div class="cart-items" id="cartItems">
+        <div class="empty-cart">Votre panier est vide.</div>
+      </div>
+
+      <div class="cart-summary">
+        <div class="summary-row">
+          <span>Sous-total</span>
+          <strong id="subtotal">0,00 $</strong>
+        </div>
+        <div class="summary-row">
+          <span>Livraison</span>
+          <strong id="shipping">0,00 $</strong>
+        </div>
+        <div class="summary-row total">
+          <span>Total</span>
+          <strong id="total">0,00 $</strong>
+        </div>
+      </div>
+
+      <div class="checkout-steps" aria-label="Étapes de commande">
+        <span class="checkout-step active">1. Panier</span>
+        <span class="checkout-step">2. Livraison</span>
+        <span class="checkout-step">3. Paiement</span>
+        <span class="checkout-step">4. Confirmation</span>
+      </div>
+
+      <form class="checkout-form" id="checkoutForm">
+        <div class="checkout-step-panel active" data-step-panel="1">
+          <div class="field-group">
+            <label for="customerName">Nom</label>
+            <input id="customerName" name="customerName" type="text" placeholder="Votre nom" required />
+          </div>
+          <div class="field-group">
+            <label for="customerEmail">Email</label>
+            <input id="customerEmail" name="customerEmail" type="email" placeholder="vous@email.com" required />
+          </div>
+          <div class="field-group">
+            <label for="customerAddress">Adresse</label>
+            <textarea id="customerAddress" name="customerAddress" rows="3" placeholder="Votre adresse de livraison" required></textarea>
+          </div>
+        </div>
+
+        <div class="checkout-step-panel" data-step-panel="2">
+          <div class="field-group">
+            <label for="deliveryCity">Ville</label>
+            <input id="deliveryCity" name="deliveryCity" type="text" placeholder="Abidjan, Bouaké..." required />
+          </div>
+          <div class="field-group">
+            <label for="deliveryMode">Mode de livraison</label>
+            <select id="deliveryMode" name="deliveryMode">
+              <option value="standard">Standard — 48h</option>
+              <option value="express">Express — 24h</option>
+              <option value="pickup">Retrait boutique</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="checkout-step-panel" data-step-panel="3">
+          <div class="payment-methods" aria-label="Paiement">
+            <p>Méthode de paiement</p>
+            <label><input type="radio" name="paymentMethod" value="carte" checked /> Carte bancaire</label>
+            <label><input type="radio" name="paymentMethod" value="orange" /> Orange Money</label>
+            <label><input type="radio" name="paymentMethod" value="airtel" /> Airtel Money</label>
+            <label><input type="radio" name="paymentMethod" value="mpsa" /> MPSA</label>
+            <label><input type="radio" name="paymentMethod" value="cash" /> Paiement à la livraison</label>
+          </div>
+        </div>
+
+        <div class="checkout-step-panel" data-step-panel="4">
+          <div class="confirmation-box">
+            <p>Votre commande est prête.</p>
+            <ul>
+              <li>Livraison : <strong id="confirmDelivery">Standard</strong></li>
+              <li>Paiement : <strong id="confirmPayment">Carte bancaire</strong></li>
+              <li>Montant : <strong id="confirmTotal">0,00 $</strong></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="checkout-actions">
+          <button type="button" class="btn btn-secondary checkout-prev hidden" data-checkout-action="prev">Retour</button>
+          <button type="button" class="btn btn-primary checkout-next" data-checkout-action="next">Suivant</button>
+          <button type="submit" class="btn btn-primary checkout-btn hidden">Valider la commande</button>
+        </div>
+      </form>
+    </aside>
+
+    <aside class="account-panel" id="accountPanel" aria-label="Compte client">
+      <div class="cart-header">
+        <div>
+          <p class="eyebrow small">Compte</p>
+          <h3>Bienvenue</h3>
+        </div>
+        <button class="close-account" aria-label="Fermer le compte">✕</button>
+      </div>
+
+      <div class="account-card">
+        <p>Votre espace client</p>
+        <p id="accountStatus" class="account-status">Aucun compte connecté.</p>
+        <ul>
+          <li>Suivi de commande</li>
+          <li>Historique d’achats</li>
+          <li>Liste de favoris</li>
+        </ul>
+      </div>
+
+      <form class="account-form">
+        <div class="field-group">
+          <label for="accountEmail">Email</label>
+          <input id="accountEmail" type="email" placeholder="bonjour@globeauty.com" />
+        </div>
+        <div class="field-group">
+          <label for="accountPassword">Mot de passe</label>
+          <input id="accountPassword" type="password" placeholder="••••••••" />
+        </div>
+        <button type="submit" class="btn btn-primary checkout-btn">Se connecter</button>
+      </form>
+    </aside>
+
+    <aside class="detail-panel" id="detailPanel" aria-label="Détail produit">
+      <div class="detail-header">
+        <div>
+          <p class="eyebrow small">Produit</p>
+          <h3 id="detailTitle">Produit</h3>
+        </div>
+        <button class="close-detail" aria-label="Fermer le détail">✕</button>
+      </div>
+
+      <div class="detail-body">
+        <img id="detailImage" src="" alt="Produit sélectionné" />
+
+        <div class="detail-meta">
+          <div class="detail-price-row">
+            <span class="detail-price" id="detailPrice">0,00 $</span>
+            <span class="detail-badge" id="detailBadge">Signature</span>
+          </div>
+          <p id="detailDescription">Description du produit</p>
+        </div>
+
+        <div class="detail-specs">
+          <div>
+            <span>Matériau</span>
+            <strong id="detailMaterial">-</strong>
+          </div>
+          <div>
+            <span>Couleur</span>
+            <strong id="detailColor">-</strong>
+          </div>
+        </div>
+
+        <div class="detail-options">
+          <label>Tailles</label>
+          <div class="sizes">
+            <button class="size-btn active" type="button">S</button>
+            <button class="size-btn" type="button">M</button>
+            <button class="size-btn" type="button">L</button>
+            <button class="size-btn" type="button">XL</button>
+          </div>
+        </div>
+
+        <div class="detail-actions">
+          <div class="detail-qty">
+            <button type="button" class="qty-btn" data-detail-qty="minus">−</button>
+            <span id="detailQuantity">1</span>
+            <button type="button" class="qty-btn" data-detail-qty="plus">+</button>
+          </div>
+          <button type="button" class="btn btn-primary" id="detailAddToCart">Ajouter au panier</button>
+        </div>
+      </div>
+    </aside>
+
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <div class="success-toast" id="successToast" role="status" aria-live="polite">
+      Commande validée avec succès !
+    </div>
+
+    <section class="faq">
+      <div class="section-heading">
+        <p class="eyebrow">FAQ</p>
+        <h2>Tout ce qu’il faut savoir avant de commander.</h2>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item active">
+          <button class="faq-question" type="button">Quels sont les délais de livraison ?</button>
+          <div class="faq-answer">
+            <p>La livraison standard est estimée entre 48h et 72h selon votre localisation. Les commandes VIP bénéficient d’une livraison express prioritaire.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" type="button">Comment choisir la bonne taille ?</button>
+          <div class="faq-answer">
+            <p>Chaque produit possède une fiche de taille détaillée. Pour un conseil personnalisé, notre service client vous accompagne par chat ou email.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" type="button">Quels sont les modes de paiement ?</button>
+          <div class="faq-answer">
+            <p>Vous pouvez payer par carte bancaire, PayPal ou à la livraison selon votre préférence. Le paiement est sécurisé et confirmé instantanément.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" type="button">Comment fonctionne le retour ?</button>
+          <div class="faq-answer">
+            <p>Les retours sont possibles dans les 14 jours suivant la livraison, à condition que le produit soit non porté et dans son emballage d’origine.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contact" class="footer">
+      <div class="footer-brand">
+        <p class="brand-name">Glo Beauty</p>
+        <span>Luxury Atelier</span>
+      </div>
+
+      <div class="newsletter">
+        <p>Recevez nos offres exclusives</p>
+        <form id="newsletterForm">
+          <input type="email" placeholder="Votre email" aria-label="Votre email" required />
+          <button type="submit">S’inscrire</button>
+        </form>
+      </div>
+
+      <p class="copyright">© 2026 Glo Beauty • Tous droits réservés</p>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
+
